@@ -1,0 +1,22 @@
+---
+title: Table of Contents
+---
+
+h2 Introduction to Data Design with Ruby on Rails
+
+- book_sections.each_pair do |section_slug, lessons|
+
+  section.section
+    h3 = section_slug
+
+    - lessons.each do |lesson|
+
+
+      div.lesson
+        span.title => link_to lesson.data.title, lesson.url
+        - if lesson.data.description.present?
+          span.description => lesson.data.description
+        / - if lesson.data.references.present?
+        /   - lesson.data.references.each do |ref|
+        /     li 
+        /       => ref_link_to( ref )
