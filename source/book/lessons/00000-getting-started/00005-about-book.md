@@ -28,3 +28,17 @@ If I had to "pitch" the learning in this book, I'd say: the knowledge here could
 - Data Visualization
 
 
+
+### What's not covered
+
+Topics that are either out of my specialty, interest, or are worth covering in an "advanced" version of this book:
+
+- Deployment
+- Security
+- Performance
+- Asset management
+- User interaction/experience
+- Advanced math and statistics
+- Machine learning and data mining
+- JavaScript frameworks
+

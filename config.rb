@@ -4,8 +4,8 @@ require 'pathname'
 require 'redcarpet'
 require 'rocco'
 
-set :title, "Introduction to Data Design with Ruby on Rails"
-set :encoding, "utf-8"
+config[:encoding] = "utf-8"
+config[:title] = "Boring Data Design with Ruby on Rails"
 
 
 # e.g. ~/proj/data-design

@@ -1,9 +1,9 @@
 ---
-title: Ruby Practice
+title: Ruby to Web
 description: You do not need Rails to build a website. Let's see how that goes.
 ---
 
-- Opening and reading a file
+- Reading and writing a file
 - Reading a CSV
 - Using SQLite3
 - Fetching a webpage
