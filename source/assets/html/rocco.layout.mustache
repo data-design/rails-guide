@@ -1,0 +1,24 @@
+
+{{#sources?}}
+<div class="sources">
+<h5>Sources:</h5>
+  {{#sources}}
+   SOURCE:  <a class="source" href="{{ url }}">{{ basename }}</a>
+  {{/sources}}
+</div>
+{{/sources?}}
+
+
+{{#sections}}
+  
+<section class="rocco" id='section-{{ section_id }}'>
+  <div class=docs>
+    {{{ docs }}}
+  </div>
+  {{#code?}}
+  <div class=code>
+    <div class='highlight'><pre>{{{ code }}}</pre></div>
+  </div>
+  {{/code?}}
+</section>
+{{/sections}}

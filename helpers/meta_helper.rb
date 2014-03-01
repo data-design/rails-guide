@@ -1,4 +1,13 @@
 require 'uri'
+require 'rocco'
+require 'redcarpet'
+
+
+# expects fname to be in owner/repo/fname # TKTKTK
+def github_filepath(fname)
+  "http://github.com/TK/#{File.basename fname}"
+end
+
 
 def page_title
   title = site_title #Set site title here
@@ -30,6 +39,25 @@ def page_keywords
   keywords.uniq.join(", ")
 end
 
+
+def project_filepath(fpath)
+  config[:root_project_dir].join fpath
+end
+
+def project_rocco_html(fpath)
+  f = project_filepath(fpath)
+  html = rocco_html(f, [github_filepath(fpath)])
+
+  return html
+end
+
+def rocco_html(fname, sources=[], opts={})
+  opts[:stylesheet] ||= nil
+  opts[:template_file] ||= config[:rocco_template_file]
+  r = Rocco.new(fname, sources, opts)
+
+  return r.to_html
+end
 
 def ref_link_to(ref_object, link_to_opts = {})
   url = ref_object.url

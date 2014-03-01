@@ -1,7 +1,44 @@
 ---
-title: Quick and Sweet Guide to Ruby Sugar
-description: Fun Ruby syntax
+title: Visual Style Guide
+description: Making code beautiful in Ruby
 ---
+
+## Space characters
+
+Ruby basically lets you do what you feel like with white space.
+
+
+### White space
+
+#### Preferred style
+
+- As in English, put white space after __commas__, such as those in argument lists:
+
+~~~ruby
+  def foo(x, y, z)
+    "foo"
+  end
+~~~
+^
+
+- Use white space around __operators__:
+
+~~~ruby
+  x = 9 + 5
+~~~
+^
+
+
+
+
+### New lines
+
+
+### Indentation
+
+- Two spaces per tab character
+- No __hard__ tab characters
+- 
 
 
 
@@ -31,21 +68,37 @@ And this will get you a completely different answer:
 
 #### Preferred style
 
-As per the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#syntax)
+As per the [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#syntax), omit parantheses in these situations:
 
-* Omit parentheses for method calls _with no arguments_:
+* Method calls _with no arguments_:
 
 ~~~ruby
-  "hey".upcase()  # =>  HEY
+  # BAD
+  "hey".upcase()
+
+  # GOOD
   "hey".upcase
 ~~~
 
 ^
 
-* Omit
+* Conditions for control flow
+~~~ruby
+  # BAD
+  if(x == 2)
+    puts 'hey'
+  end
+
+  # GOOD
+  if x == 2
+    puts 'hey'
+  end
+~~~
 
 
 #### Abusive style
+
+When omitting parentheses causes pain:
 
 - Omitting parentheses in method definitions:
 

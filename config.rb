@@ -1,7 +1,19 @@
 require 'slim'
+require 'pathname'
+
+require 'redcarpet'
+require 'rocco'
 
 set :title, "Introduction to Data Design with Ruby on Rails"
 set :encoding, "utf-8"
+
+
+# e.g. ~/proj/data-design
+config[:root_project_dir] = Pathname.new File.expand_path("../..", __FILE__)
+
+# e.g. ~/proj/data-design/rails-guide/
+config[:rocco_template_file] = Pathname.new(File.expand_path('../', __FILE__)).join 'source/assets/html/rocco.layout.mustache'
+
 
 I18n.enforce_available_locales = true
 #Markdown

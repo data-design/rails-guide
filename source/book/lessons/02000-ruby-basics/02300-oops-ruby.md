@@ -10,3 +10,4 @@ title: Object-Oriented Ruby
 
 ## Command Query Separation
 
+## Type checking
