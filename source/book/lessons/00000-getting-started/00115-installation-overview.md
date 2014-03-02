@@ -1,6 +1,7 @@
 ---
 title: Installing Ruby and Rails
-description: The highly-underrated field
+description: A high-level overview of Ruby and Rails installation
+publish: true
 ---
 
 Getting Ruby on Rails to work on your computer may likely be the most frustrating experience you'll have with Rails (at least before you start _deploying_ Rails apps). There's no quick fix for it: Rails is liked because it _does a lot of things_, which means lots of _dependencies_, which means lots of opportunities for things to go wrong.
