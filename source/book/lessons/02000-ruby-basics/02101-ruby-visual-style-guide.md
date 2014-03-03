@@ -1,6 +1,7 @@
 ---
 title: Visual Style Guide
 description: Making code beautiful in Ruby
+publish: true
 ---
 
 ## Space characters

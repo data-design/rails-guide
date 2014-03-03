@@ -1,6 +1,8 @@
 ---
 title: Rails generators cheat sheet
 description: How to quickly scaffold an application 
+publish: true
+
 ---
 
 ### Setup a Rails application

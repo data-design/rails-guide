@@ -1,6 +1,6 @@
 require 'slim'
 require 'pathname'
-
+require 'pry'
 require 'redcarpet'
 require 'rocco'
 
@@ -51,10 +51,10 @@ end
 set :layout, :page
 
 page "/", :proxy => "/book/toc.html", :layout => :book do 
-  @hide_nav = true
+
 end
 
-page "/book/**/**", :layout => :book do 
+page "/book/**/**", :layout => :lesson do 
 
 end
 
@@ -63,6 +63,15 @@ end
 
 
 ready do
+  arr = sitemap.resources.select{|r| r.path =~ %r{book/lessons/} }
+
+  arr.each do |resource|
+    path_slug = File.basename(resource.path, '.html').sub(/^\d+-/, '')
+    page( "/lessons/#{path_slug}", :proxy => resource.path, :layout => :lesson) do
+
+    end
+  end
+
   # sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
   #   proxy "/categories/#{category}.html", "category.html", 
   #     :locals => { :category => category, :pages => pages }

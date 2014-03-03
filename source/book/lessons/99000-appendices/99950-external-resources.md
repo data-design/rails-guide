@@ -1,6 +1,8 @@
 ---
 title: Recommended Reading
 description: Other great resources on Ruby
+publish: true
+
 ---
 
 

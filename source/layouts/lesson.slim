@@ -1,0 +1,12 @@
+- wrap_layout :book
+  article.lesson
+    div.banner
+      h1.title = current_page.data.title
+
+    div.container
+      div.row
+        div.col-sm-10.col-sm-offset-1
+          div.content
+
+            = yield
+

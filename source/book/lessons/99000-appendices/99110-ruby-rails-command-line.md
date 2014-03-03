@@ -4,6 +4,8 @@ description: The many ways to do Ruby things on the shell
 references:
   - url: http://guides.rubygems.org/command-reference
     title: Rubygems Command References
+publish: true
+
 ---
 
 

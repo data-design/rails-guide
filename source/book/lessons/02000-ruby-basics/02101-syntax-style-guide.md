@@ -1,6 +1,8 @@
 ---
 title: Syntax-Sugar Style Guide
 description: Sweet Ruby without the tooth decay
+publish: true
+
 ---
 
 ## Alternatives to `initialize`

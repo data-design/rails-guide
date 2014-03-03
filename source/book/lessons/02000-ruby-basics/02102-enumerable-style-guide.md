@@ -1,6 +1,8 @@
 ---
 title: Enumerable Style Guide
 description: Collections and such
+publish: true
+
 ---
 
 

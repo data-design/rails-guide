@@ -1,6 +1,6 @@
 ---
 title: Running Ruby
-description: "Hello world" and all that
+description: "'Hello world' and all that"
 publish: true
 ---
 

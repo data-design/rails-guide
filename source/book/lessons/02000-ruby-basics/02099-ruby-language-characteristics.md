@@ -1,6 +1,7 @@
 ---
 title: Ruby for the Journeyman
 description: Important things to know for first-time Ruby programmers
+publish: true
 references:
     - url: https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/
       title: From Ruby to PHP

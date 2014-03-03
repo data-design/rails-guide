@@ -88,8 +88,10 @@ def site_title
   config[:title]
 end
 
+
 def book_lessons
-  sitemap.resources.select{|r| r.path =~ /book\/lessons/}.sort_by{|s| s.path}
+  sitemap.resources.select{|r| r.path =~ /book\/lessons/}.sort_by{|s| s.path}.
+    select{|r| r.data.publish == true }
 end
 
 
@@ -102,6 +104,13 @@ def book_sections
 
     hsh
   end
+end
+
+
+def lesson_path(normal_path)
+  slug = File.basename(normal_path, '.html').sub(/^\d+-/, '')
+
+  return "/lessons/#{slug}"
 end
 
 
