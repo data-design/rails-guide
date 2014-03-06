@@ -1,4 +1,4 @@
 ---
 title: Rails Models
-description: YEA
+description: Data in a bag
 ---

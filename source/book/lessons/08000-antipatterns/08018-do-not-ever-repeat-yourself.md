@@ -1,0 +1,1 @@
+http://david.heinemeierhansson.com/2012/emails-are-views.html
